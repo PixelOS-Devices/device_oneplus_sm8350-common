@@ -138,6 +138,9 @@ ro.surface_flinger.wcg_composition_dataspace=143261696
 # Incremental FS
 ro.incremental.enable=yes
 
+# LMK
+ro.lmk.filecache_min_kb=153600
+
 # Media
 debug.stagefright.ccodec=4
 debug.stagefright.omx_default_rank=0
