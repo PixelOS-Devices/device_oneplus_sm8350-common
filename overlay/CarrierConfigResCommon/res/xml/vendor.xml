@@ -1395,6 +1395,8 @@
             <item value="1" />
         </int-array>
         <boolean name="allow_hold_call_during_emergency_bool" value="false" />
+        <!-- Show 4G icon instead of LTE icon -->
+        <boolean name="show_4g_for_lte_data_icon_bool" value="true"/>
     </carrier_config>
     <carrier_config mcc="460" mnc="02">
         <boolean name="carrier_volte_available_bool" value="true" />
