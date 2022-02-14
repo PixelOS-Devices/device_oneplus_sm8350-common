@@ -233,3 +233,16 @@ service lahaina-post-boot /vendor/bin/sh /vendor/bin/init.lahaina.post_boot.sh
 
 on property:vendor.post_boot.parsed=1
     start lahaina-post-boot
+
+    # Setup foreground cpuset for display composer.
+    write /dev/cpuset/foreground/cpus 0-6
+
+service vendor.qti.hardware.display.composer /vendor/bin/hw/vendor.qti.hardware.display.composer-service
+    override
+    class hal animation
+    user system
+    group graphics drmrpc
+    capabilities SYS_NICE
+    onrestart restart surfaceflinger
+    socket pps stream 0660 system system
+    writepid /dev/cpuset/foreground/tasks
