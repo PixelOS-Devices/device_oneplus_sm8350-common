@@ -145,6 +145,7 @@ ro.incremental.enable=yes
 
 # Media
 debug.stagefright.c2inputsurface=-1
+vendor.media.omx=0
 
 # Netflix
 ro.netflix.bsp_rev=Q875-32408-1
