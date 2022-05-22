@@ -60,6 +60,9 @@ TARGET_BOOTLOADER_BOARD_NAME := lahaina
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(COMMON_PATH)/bluetooth/include
 
+# Display
+SOONG_CONFIG_qtidisplay_udfps := true
+
 # Properties
 TARGET_ODM_PROP += $(COMMON_PATH)/odm.prop
 TARGET_PRODUCT_PROP += $(COMMON_PATH)/product.prop

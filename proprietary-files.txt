@@ -218,11 +218,6 @@ vendor/etc/init/vendor.qti.diag.rc
 vendor/lib/vendor.qti.diaghal@1.0.so
 vendor/lib64/vendor.qti.diaghal@1.0.so
 
-# Display (CWB)
-odm/etc/vintf/manifest/manifest_oplus_cwb.xml
-odm/lib64/vendor.oplus.hardware.cwb@1.0.so
-vendor/lib64/libcwb_sm8350.so
-
 # Display (Features)
 vendor/bin/feature_enabler_client
 vendor/etc/init/feature_enabler_client.rc
@@ -234,18 +229,12 @@ vendor/etc/Oplus_QC_LTM_Dev_2020_10_30.pfm
 vendor/lib64/libhdr_tm.so
 
 # Display (HWC)
-odm/lib64/libsnapdragoncolor-pxlw.so
-vendor/bin/hw/vendor.qti.hardware.display.composer-service
 vendor/bin/qdcmss
 vendor/etc/init/qdcmss.rc
 vendor/etc/snapdragon_color_libs_config.xml
-vendor/lib64/libdisplayconfig.qti.so
 vendor/lib64/libdpps.so
-vendor/lib64/libhistogram.so
 vendor/lib64/libqdcm-mode-parser.so
 vendor/lib64/libqdutils.so
-vendor/lib64/libsdmcore.so
-vendor/lib64/libsdmutils.so
 vendor/lib64/libsnapdragoncolor-manager.so
 vendor/lib64/libsnapdragoncolor-qdcm.so
 
@@ -259,7 +248,6 @@ vendor/lib64/libdisplayqos.so
 vendor/lib64/libdisplayskuutils.so
 vendor/lib64/libqseed3.so
 vendor/lib64/librcmask.so
-vendor/lib64/libsdedrm.so
 vendor/lib64/libsdm-color.so
 vendor/lib64/libsdm-colormgr-algo.so
 vendor/lib64/libsdm-diag.so
@@ -526,28 +514,6 @@ vendor/lib64/vendor.qti.ims.rcsconfig@2.0.so
 vendor/lib64/vendor.qti.ims.rcsconfig@2.1.so
 vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so
 vendor/lib64/vendor.qti.imsrtpservice@3.0.so
-
-# Iris
-odm/bin/hw/vendor.pixelworks.hardware.display.iris-service
-odm/bin/hw/vendor.pixelworks.hardware.feature.irisfeature-service
-odm/etc/init/vendor.pixelworks.hardware.display.iris-service.rc
-odm/etc/init/vendor.pixelworks.hardware.feature.irisfeature-service.rc
-odm/etc/vintf/manifest/vendor.pixelworks.hardware.display.iris-service.xml
-odm/etc/vintf/manifest/vendor.pixelworks.hardware.feature.irisfeature-service.xml
-odm/lib64/libpwirisIoctlWrapper.so
-odm/lib64/libpwirisPCS.so
-odm/lib64/libpwiriscalibrate.so
-odm/lib64/libpwirisfeature.so
-odm/lib64/libpwirishalwrapper.so
-odm/lib64/libpwirispq.so
-odm/lib64/libpwirisservice.so
-odm/lib64/libpwirissoft.so
-odm/lib64/libpwsoftirisPCS.so
-odm/lib64/vendor.pixelworks.hardware.display@1.0.so
-odm/lib64/vendor.pixelworks.hardware.display@1.1.so
-odm/lib64/vendor.pixelworks.hardware.feature@1.0.so
-vendor/lib64/libpwirisfeature.so
-vendor/lib64/libpwirishalwrapper.so
 
 # IRQ balance
 vendor/bin/msm_irqbalance
