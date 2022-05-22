@@ -257,10 +257,6 @@ vendor/etc/init/vendor.qti.diag.rc
 vendor/lib/vendor.qti.diaghal@1.0.so
 vendor/lib64/vendor.qti.diaghal@1.0.so
 
-# Display (CWB)
-odm/lib64/vendor.oplus.hardware.cwb@1.0.so
-vendor/lib64/libcwb_sm8350.so
-
 # Display (Features)
 vendor/bin/feature_enabler_client
 vendor/etc/init/feature_enabler_client.rc
@@ -271,16 +267,11 @@ vendor/etc/Oplus_QC_LTM_Dev_2020_10_30.pfm
 vendor/lib64/libhdr_tm.so
 
 # Display (HWC)
-vendor/bin/hw/vendor.qti.hardware.display.composer-service
 vendor/bin/qdcmss
 vendor/etc/init/qdcmss.rc
-vendor/lib64/libdisplayconfig.qti.so
 vendor/lib64/libdpps.so
-vendor/lib64/libhistogram.so
 vendor/lib64/libqdcm-mode-parser.so
 vendor/lib64/libqdutils.so
-vendor/lib64/libsdmcore.so
-vendor/lib64/libsdmutils.so
 vendor/lib64/libsnapdragoncolor-manager.so
 vendor/lib64/libsnapdragoncolor-qdcm.so
 
@@ -294,7 +285,6 @@ vendor/lib64/libdisplayqos.so
 vendor/lib64/libdisplayskuutils.so
 vendor/lib64/libqseed3.so
 vendor/lib64/librcmask.so
-vendor/lib64/libsdedrm.so
 vendor/lib64/libsdm-color.so
 vendor/lib64/libsdm-colormgr-algo.so
 vendor/lib64/libsdm-diag.so
@@ -590,13 +580,6 @@ vendor/firmware/ipa_fws.b03
 vendor/firmware/ipa_fws.b04
 vendor/firmware/ipa_fws.elf
 vendor/firmware/ipa_fws.mdt
-
-# Iris
-odm/lib64/libpwirisfeature.so
-odm/lib64/libpwirishalwrapper.so
-odm/lib64/vendor.pixelworks.hardware.display@1.0.so
-odm/lib64/vendor.pixelworks.hardware.display@1.1.so
-odm/lib64/vendor.pixelworks.hardware.feature@1.0.so
 
 # IRQ balance
 vendor/bin/msm_irqbalance
