@@ -93,6 +93,15 @@ ro.crypto.volume.metadata.method=dm-default-key
 persist.vendor.dpm.idletimer.mode=default
 persist.vendor.dpmhalservice.enable=1
 
+# Dolby
+vendor.audio.dolby.ds2.enabled=true
+vendor.audio.dolby.ds2.hardbypass=false
+vendor.product.device=OP_PHONE
+vendor.product.manufacturer=OPD
+ro.vendor.dolby.dax.version=DAX3_3.6.0.12_r1
+ro.vendor.product.device.db=OP_DEVICE
+ro.vendor.product.manufacturer.db=OP_PHONE
+
 # Display
 vendor.display.comp_mask=0
 vendor.display.disable_excl_rect=0
