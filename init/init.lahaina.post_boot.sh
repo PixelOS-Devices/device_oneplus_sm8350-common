@@ -26,6 +26,14 @@ echo 0-3 > /dev/cpuset/system-background/cpus
 echo 0-3 > /dev/cpuset/restricted/cpus
 echo 1-2 > /dev/cpuset/audio-app/cpus
 
+# governor settings
+echo 20000 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/down_rate_limit_us
+echo 500 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/up_rate_limit_us
+echo 10000 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/down_rate_limit_us
+echo 500 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/up_rate_limit_us
+echo 5000 > /sys/devices/system/cpu/cpufreq/policy7/schedutil/down_rate_limit_us
+echo 500 > /sys/devices/system/cpu/cpufreq/policy7/schedutil/up_rate_limit_us
+
 # uclamp tuning
 echo 50 > /dev/cpuctl/background/cpu.uclamp.max
 echo 50 > /dev/cpuctl/system-background/cpu.uclamp.max
