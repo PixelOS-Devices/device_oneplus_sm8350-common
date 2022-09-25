@@ -161,7 +161,8 @@ PRODUCT_COPY_FILES += \
     hardware/qcom-caf/sm8350/display/config/snapdragon_color_libs_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/snapdragon_color_libs_config.xml
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    ro.surface_flinger.supports_background_blur=1
+    ro.surface_flinger.supports_background_blur=1 \
+    ro.sf.blurs_are_expensive=1
 
 # Doze
 PRODUCT_PACKAGES += \
