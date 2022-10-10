@@ -291,7 +291,6 @@ vendor/lib/soundfx/libswdap.so|f476a901463183905e4056588b225b2e8f6a9997
 vendor/lib/soundfx/libswgamedap.so|0f9ebf216554fd19cbad0a992802c3f96472c3c4
 vendor/lib/libdapparamstorage.so|21a73b73e8f7a1bb42dce91438b3a65635a5e0ab
 vendor/lib/libdeccfg.so|de5d8fd8ae5e9a0a92bffdfac6d2761a16c1c6c6
-vendor/lib/libstagefright_soft_ac4dec.so|76a5061c95d2437ff825884745d0990e727583e1
 vendor/lib/libstagefright_soft_ddpdec.so|28de9538ab47e26d155df9f6122fc70329843b37
 vendor/lib/libstagefrightdolby.so|e377dcc5833b59cf18670c1826a297eb3cf9f04d
 vendor/lib/vendor.dolby.hardware.dms@2.0.so|3f418d5b68b713b6d8fa53540856d82bc1e97bad
@@ -302,7 +301,6 @@ vendor/lib64/soundfx/libswgamedap.so|9eb9cbf22333eefe1182a32ae22cf0a5c89a9305
 vendor/lib64/libdapparamstorage.so|34bc00a5fc29789a5ac140e5a6702e2167ca95c1
 vendor/lib64/libdeccfg.so|78100e2d82c5260bef6bd5330d763fc2fb6ecd1a
 vendor/lib64/libdlbdsservice.so|4e8a2d53a3c04e84d1fe580cf299ae4601d4a991
-vendor/lib64/libstagefright_soft_ac4dec.so|042fc079f7d9f5bcfa2c12bec7f1977b0e525aaa
 vendor/lib64/libstagefright_soft_ddpdec.so|154fec6036c9f259ae7b958ec92a9b4510429afe
 vendor/lib64/libstagefrightdolby.so|44e35ce9c60af49d516329afc908c1c7d9cfc6e3
 vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so|33312b9c0f15eddb62a6d17659b0d9ddbfd61737
