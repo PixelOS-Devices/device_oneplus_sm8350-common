@@ -555,7 +555,6 @@ vendor/firmware/ipa_fws.mdt
 
 # IRQ balance
 vendor/bin/msm_irqbalance
-vendor/etc/msm_irqbalance.conf
 
 # Kernel
 vendor/bin/init.kernel.post_boot-yupik.sh

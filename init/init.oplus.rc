@@ -115,3 +115,10 @@ service oplus_sensor_fb /odm/bin/oplus_sensor_fb
     group system
     class late_start
     oneshot
+
+on property:vendor.post_boot.parsed=1
+# IRQ Tuning
+# IRQ 243: msm_drm0
+# IRQ 222: kgsl_3d0_irq
+write /proc/irq/243/smp_affinity_list 2
+write /proc/irq/240/smp_affinity_list 1
