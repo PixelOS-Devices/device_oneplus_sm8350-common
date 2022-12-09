@@ -90,3 +90,8 @@ sh_binary {
     src: "init.qcom.sh",
     vendor: true,
 }
+sh_binary {
+    name: "init.kernel.post_boot-lahaina.sh",
+    src: "init.kernel.post_boot-lahaina.sh",
+    vendor: true,
+}
