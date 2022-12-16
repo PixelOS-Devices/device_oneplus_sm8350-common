@@ -1152,14 +1152,6 @@ odm/lib64/libwvhidl.so
 vendor/etc/oplus_Widevine_licenses.pfm
 vendor/lib64/libtrustedapploader.so
 
-# WiFi
-odm/etc/wifi/regdb.bin
-odm/vendor/etc/wifi/WCNSS_qcom_cfg.ini
-vendor/bin/cnss-daemon
-vendor/etc/init/init.vendor.wlan.rc
-vendor/etc/wifi/p2p_supplicant_overlay.conf
-vendor/etc/wifi/wpa_supplicant_overlay.conf
-
 # WiFi Display
 system/framework/WfdCommon.jar
 system_ext/bin/wfdservice
