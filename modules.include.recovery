@@ -1,4 +1,3 @@
-msm_drm.ko
 adsp_loader_dlkm.ko
 apr_dlkm.ko
 q6_notifier_dlkm.ko
