@@ -347,6 +347,33 @@ vendor/lib64/libspl.so
 vendor/lib64/libssd.so
 vendor/lib64/vendor.qti.hardware.qseecom@1.0.so
 
+# Face unlock
+odm/bin/hw/vendor.oplus.hardware.biometrics.face@1.0-service
+odm/etc/init/vendor.oplus.hardware.biometrics.face@1.0-service.rc
+odm/etc/vintf/manifest/manifest_oplus_face.xml
+odm/lib64/libstfaceunlockocl.so
+odm/lib64/android.hardware.biometrics.face-V1-ndk_platform.so
+odm/lib64/android.hardware.biometrics.common-V1-ndk_platform.so
+odm/lib64/vendor.oplus.hardware.commondcs@1.0.so
+odm/init.oplus.face.rc:odm/etc/init/hw/init.oplus.face.rc
+vendor/bin/hw/android.hardware.biometrics.face@1.0-service.faceauth:vendor/bin/hw/android.hardware.biometrics.face@1.0-service.oplus
+vendor/lib64/libcamera2ndk_vendor.so
+vendor/lib64/vendor.qti.hardware.secureprocessor.common@1.0.so
+vendor/lib64/vendor.qti.hardware.secureprocessor.config@1.0.so
+vendor/lib64/vendor.qti.hardware.secureprocessor.device@1.0.so
+vendor/lib64/vendor.qti.hardware.secureprocessor.common@1.0-helper.so
+
+# Face Firmware
+odm/vendor/firmware/facereg.b00
+odm/vendor/firmware/facereg.b01
+odm/vendor/firmware/facereg.b02
+odm/vendor/firmware/facereg.b03
+odm/vendor/firmware/facereg.b04
+odm/vendor/firmware/facereg.b05
+odm/vendor/firmware/facereg.b06
+odm/vendor/firmware/facereg.b07
+odm/vendor/firmware/facereg.mdt
+
 # Gatekeeper
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
 vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
@@ -674,6 +701,10 @@ vendor/lib64/libOmxG711Dec.so
 vendor/lib64/libOmxMpeghEncSw.so
 vendor/lib64/libOmxQcelp13Dec.so
 vendor/lib64/libOmxWmaDec.so
+
+# OPLUS
+odm/lib64/vendor.oplus.hardware.osense.client@1.0.so
+odm/lib64/libosensehalclient.so
 
 # Peripheral manager
 vendor/bin/pm-proxy

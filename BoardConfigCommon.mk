@@ -102,7 +102,8 @@ BOARD_KERNEL_CMDLINE := \
     service_locator.enable=1 \
     swiotlb=0 \
     ip6table_raw.raw_before_defrag=1 \
-    iptable_raw.raw_before_defrag=1
+    iptable_raw.raw_before_defrag=1 \
+    androidboot.selinux=permissive
 BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_KERNEL_PAGESIZE := 4096
 
