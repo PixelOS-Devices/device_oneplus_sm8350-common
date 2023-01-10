@@ -185,18 +185,10 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.3-service.oplus \
-    android.hardware.biometrics.face@1.0-service.oplus \
-    android.hardware.common-V1-ndk_platform.vendor \
-    android.hardware.common-V2-ndk_platform.vendor \
-    android.hardware.keymaster-V3-ndk_platform.vendor
+    android.hardware.biometrics.fingerprint@2.3-service.oplus
 
 PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml \
-    frameworks/native/data/etc/android.hardware.biometrics.face.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.biometrics.face.xml
-
-PRODUCT_PACKAGES += \
-    libcamera2ndk_vendor
+    frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
