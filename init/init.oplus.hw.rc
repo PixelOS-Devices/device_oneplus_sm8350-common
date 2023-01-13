@@ -4,6 +4,18 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+on property:ro.boot.prjname=20820
+    setprop ro.boot.hardware.revision "CN"
+
+on property:ro.boot.prjname=20821
+    setprop ro.boot.hardware.revision "IN"
+
+on property:ro.boot.prjname=21675
+    setprop ro.boot.hardware.revision "IN"
+
+on property:ro.boot.prjname=21676
+    setprop ro.boot.hardware.revision "EU"
+
 on property:ro.boot.rf_version=11
     setprop ro.boot.hardware.revision "CN"
 
