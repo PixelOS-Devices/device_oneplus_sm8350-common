@@ -29,11 +29,9 @@ PRODUCT_PACKAGES += \
     com.dsi.ant@1.0.vendor
 
 # Alert slider
-ifeq ($(PRODUCT_BRAND),OnePlus)
 PRODUCT_PACKAGES += \
     KeyHandler \
     tri-state-key-calibrate
-endif
 
 # APEX
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
@@ -334,12 +332,8 @@ PRODUCT_PACKAGES += \
 $(call inherit-product, hardware/oplus/overlay/qssi/qssi.mk)
 
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-aosp
-
-ifeq ($(PRODUCT_BRAND),OnePlus)
-DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-aosp \
     $(LOCAL_PATH)/overlay-aosp_oneplus
-endif
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_PACKAGES += \
