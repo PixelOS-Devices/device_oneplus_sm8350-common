@@ -237,6 +237,7 @@ PRODUCT_PACKAGES += \
     init.class_main.sh \
     init.kernel.post_boot-lahaina.sh \
     init.kernel.post_boot-yupik.sh \
+    init.lahaina.post_boot.sh \
     init.oplus.hw.rc \
     init.oplus.hw.rc.recovery \
     init.oplus.rc \
