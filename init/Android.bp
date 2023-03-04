@@ -98,6 +98,12 @@ sh_binary {
 }
 
 sh_binary {
+    name: "init.lahaina.post_boot.sh",
+    src: "init.lahaina.post_boot.sh",
+    vendor: true,
+}
+
+sh_binary {
     name: "init.qcom.sh",
     src: "init.qcom.sh",
     vendor: true,
