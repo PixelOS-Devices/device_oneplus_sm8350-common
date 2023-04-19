@@ -4,6 +4,16 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# ice
+on property:ro.boot.prjname=21643
+    setprop ro.boot.hardware.revision "KE"
+
+on property:ro.boot.prjname=21644
+    setprop ro.boot.hardware.revision "CN"
+
+on property:ro.boot.prjname=21695
+    setprop ro.boot.hardware.revision "IN"
+
 # lemonade/p
 on property:ro.boot.rf_version=11
     setprop ro.boot.hardware.revision "CN"

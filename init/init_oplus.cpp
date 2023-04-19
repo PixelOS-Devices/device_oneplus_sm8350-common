@@ -38,6 +38,10 @@ void vendor_load_properties() {
     auto rf_version = std::stoi(GetProperty("ro.boot.rf_version", "0"));
 
     switch (prjname) {
+        // ice
+        case 21643: // KE
+            OverrideProperty("ro.product.product.model", "RMX3461T2");
+            break;
         // lunaa
         case 21603: // CN
             OverrideProperty("ro.product.product.model", "RMX3361");
