@@ -165,6 +165,7 @@ ro.telephony.default_network=33,33
 persist.vendor.sensors.allow_non_default_discovery=true
 persist.vendor.sensors.on_change_sample_period=true
 persist.vendor.sensors.sync_request=true
+vendor.sensor.hal.pickup=android.sensor.tilt_detector
 
 # Sensors
 persist.vendor.sensors.debug.hal=0
