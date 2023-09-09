@@ -16,6 +16,13 @@ persist.vendor.bluetooth.modem_nv_support=true
 ro.vendor.display.sensortype=2
 vendor.display.primary_mixer_stages=9
 
+# Dolby
+ro.vendor.dolby.dax.version=DAX3_3.6.0.12_r1
+ro.vendor.dolby.model=PAFM00
+ro.vendor.dolby.device=OP46C3
+ro.vendor.dolby.manufacturer=OPLUS
+ro.vendor.dolby.brand=OPLUS
+
 # Media
 ro.odm.build.media_performance_class=30
 vendor.media.vpp.enable=0
