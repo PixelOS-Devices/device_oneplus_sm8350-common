@@ -10,8 +10,6 @@ persist.vendor.audio.spv4.enable=true
 persist.vendor.audio.vbat.enabled=true
 persist.vendor.audio.voicecall.speaker.stereo=true
 vendor.audio.adm.buffering.ms=2
-vendor.audio.dolby.ds2.enabled=false
-vendor.audio.dolby.ds2.hardbypass=false
 vendor.audio.feature.a2dp_offload.enable=true
 vendor.audio.feature.afe_proxy.enable=true
 vendor.audio.feature.battery_listener.enable=true
@@ -104,6 +102,15 @@ vendor.display.disable_hw_recovery_dump=1
 vendor.display.disable_offline_rotator=1
 vendor.display.enable_async_powermode=0
 vendor.display.enable_optimize_refresh=1
+
+# Dolby
+vendor.audio.dolby.ds2.enabled=false
+vendor.audio.dolby.ds2.hardbypass=false
+vendor.product.device=OP_PHONE
+vendor.product.manufacturer=OPD
+ro.vendor.dolby.dax.version=DAX3_3.6.0.12_r1
+ro.vendor.product.device.db=OP_DEVICE
+ro.vendor.product.manufacturer.db=OP_PHONE
 
 # DRM
 drm.service.enabled=true

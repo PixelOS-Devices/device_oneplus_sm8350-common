@@ -41,16 +41,16 @@
         <library name="volume_listener" path="libvolumelistener.so"/>
         <library name="audiosphere" path="libasphere.so"/>
         <library name="shoebox" path="libshoebox.so"/>
-        <!--DOLBY DAP-->
+        <!-- #ifdef OPLUS_FEATURE_DOLBY -->
+        <!-- WuHao@MULTIMEDIA.AUDIOSERVER.EFFECT, 2019/09/18, add for dolby -->
+        <!-- DOLBY DAP -->
         <library name="dap_sw" path="libswdap.so"/>
         <library name="dap_hw" path="libhwdap.so"/>
-        <!--DOLBY END-->
+        <!-- DOLBY END -->
         <!--DOLBY GAME-->
         <library name="gamedap" path="libswgamedap.so"/>
         <!--DOLBY END-->
-        <!--DOLBY VQE-->
-        <library name="vqe" path="libswvqe.so"/>
-        <!--DOLBY END-->
+        <!-- #endif OPLUS_FEATURE_DOLBY -->
     </libraries>
     <effects>
         <effectProxy name="bassboost" library="proxy" uuid="14804144-a5ee-4d24-aa88-0002a5d5c51b">
@@ -99,20 +99,23 @@
         <effect name="notification_helper" library="volume_listener" uuid="0b776dde-0590-11e5-81ba-0025b32654a0"/>
         <effect name="audiosphere" library="audiosphere" uuid="184e62ab-2d19-4364-9d1b-c0a40733866c"/>
         <effect name="shoebox" library="shoebox" uuid="1eab784c-1a36-4b2a-b7fc-e34c44cab89e"/>
-        <!--DOLBY DAP-->
+        <!-- #ifdef OPLUS_FEATURE_DOLBY -->
+        <!-- WuHao@MULTIMEDIA.AUDIOSERVER.EFFECT, 2019/09/18, add for dolby -->
+        <!-- DOLBY DAP -->
         <effectProxy name="dap" library="proxy" uuid="9d4921da-8225-4f29-aefa-39537a04bcaa">
             <libsw library="dap_sw" uuid="6ab06da4-c516-4611-8166-452799218539"/>
             <libhw library="dap_hw" uuid="a0c30891-8246-4aef-b8ad-d53e26da0253"/>
         </effectProxy>
-        <!--DOLBY END-->
+        <!-- DOLBY END -->
         <!--DOLBY GAME-->
         <effect name="gamedap" library="gamedap" uuid="3783c334-d3a0-4d13-874f-0032e5fb80e2"/>
         <!--DOLBY END-->
-        <!--DOLBY VQE-->
-        <effect name="vqe" library="vqe" uuid="64a0f614-7fa4-48b8-b081-d59dc954616f"/>
-        <!--DOLBY END-->
+        <!-- #endif OPLUS_FEATURE_DOLBY -->
     </effects>
     <postprocess>
+    <!-- #ifndef OPLUS_FEATURE_DOLBY -->
+    <!-- WuHao@MULTIMEDIA.AUDIOSERVER.EFFECT, 2019/09/18, Remove for dolby -->
+    <!--
         <stream type="music">
             <apply effect="music_helper"/>
         </stream>
@@ -122,12 +125,19 @@
         <stream type="alarm">
             <apply effect="alarm_helper"/>
         </stream>
+    -->
+    <!-- #endif OPLUS_FEATURE_DOLBY -->
         <stream type="voice_call">
             <apply effect="voice_helper"/>
         </stream>
+    <!-- #ifndef OPLUS_FEATURE_DOLBY -->
+    <!-- WuHao@MULTIMEDIA.AUDIOSERVER.EFFECT, 2019/09/18, Remove for dolby -->
+    <!--
         <stream type="notification">
             <apply effect="notification_helper"/>
         </stream>
+    -->
+    <!-- #endif OPLUS_FEATURE_DOLBY -->
     </postprocess>
     <preprocess>
         <stream type="voice_communication">

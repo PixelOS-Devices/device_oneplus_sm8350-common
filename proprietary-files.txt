@@ -80,7 +80,6 @@ vendor/lib/libaudcal.so
 vendor/lib/libaudio_log_utils.so
 vendor/lib/libaudioparsers.so
 vendor/lib/libhdmipassthru.so
-vendor/lib/libqtigef.so
 vendor/lib64/libadsprpc.so
 
 # Bluetooth
@@ -271,40 +270,13 @@ vendor/lib64/vendor.display.color@1.4.so|6e4cffe7b1a287dee9c4fb9b8e08ddac50b916b
 vendor/lib64/vendor.display.color@1.5.so|0474d3d9123fd38538a3cd1e3c267608d71b7126
 vendor/lib64/vendor.display.postproc@1.0.so|f82e704e275c25ef27ff37cdbbfb2360e53c2611
 
-# Dolby (daxservice) - lemonadep
+# Dolby (daxService) - lemonadep
 system_ext/etc/permissions/com.dolby.daxservice.xml|cdd700ce16303ff2baa41eac44ed779f545db418
 system_ext/priv-app/daxService/daxService.apk|ed1de719afc7181a7e896e0eeaf14edc00761c21
 
-# Dolby - OOS
-odm/etc/media_codecs_dolby_audio.xml:vendor/etc/media_codecs_dolby_audio.xml|a794eb15fc198d0285510260025cd99b53fa174f
-odm/bin/hw/vendor.dolby_v3_6.hardware.dms360@2.0-service|7951f0ede5108f0080bb8abb18651058db9e46ae
-odm/etc/init/vendor.dolby_v3_6.hardware.dms360@2.0-service.rc|5da96cf855061860f27dff6399505f8d1f1daeee
-odm/etc/vintf/manifest/manifest_dax_dolby_v3_6.xml|c4704e5bc4da7cdf291c79389f379c8355eaf730
-odm/etc/dolby/multimedia_dolby_dax_default.xml|be49c4cde1bc41f67fbfa2c49ba6d8f4e40eb8dc
-odm/lib/vendor.dolby_v3_6.hardware.dms360@2.0-impl.so|b535d7ebc47cb933fe7654a53cc36a5bfc928639
-odm/lib/vendor.dolby_v3_6.hardware.dms360@2.0.so|d6f89d6499661023dc8fe451ca5c55f1a3ba7d55
-odm/lib/soundfx/libhwdap_v3_6.so|1992eea271d67bef7482377605a2efa4c2f6dba8
-odm/lib/soundfx/libswdap_v3_6.so|3e521eb43ea5b43e2436f2c46d7b8f169b2f1553
-odm/lib/libdapparamstorage_v3_6.so|c6c36fba280f2373034cf754870611614bf0f22f
-odm/lib/libdeccfg_v3_6.so|742cadaf61aea20eabdac099668bfd43ddf4bb35
-odm/lib/libdlbdsservice_v3_6.so|eac269dfbf334f4cc9d5900fb1c53dbfbaea4d6b
-odm/lib/libqtigef.so|c7d588a80c3aac52b160db6ded1528bb8b8fd7bd
-odm/lib/libstagefrightdolby.so|47b7e78597d7d047ff28a573092ed3ad7f88df48
-odm/lib/libstagefright_soft_ac4dec_v3_6.so|db0fa99ece32e733f624fb99d4ea5c1e67d1e554
-odm/lib/libstagefright_soft_ddpdec_v3_6.so|7b9a91a1d15c90a0d804d372554e561380cd109e
-odm/lib64/vendor.dolby_v3_6.hardware.dms360@2.0-impl.so|5b5f4b383c03a6aaa759b1cc7f6f0aea7d1f6ba0
-odm/lib64/vendor.dolby_v3_6.hardware.dms360@2.0.so|e62f04117fead61eea7f2593e7ccbb565436a0ee
-odm/lib64/soundfx/libhwdap_v3_6.so|e4bf45ccd3ae9d4347d1416019d96681b2c651ea
-odm/lib64/soundfx/libswdap_v3_6.so|92dca01e5bc4cd654a1b72197fc744d8e5bb1b74
-odm/lib64/libdapparamstorage_v3_6.so|d0c9e16ec5a589a9e47a8d3907d7949fd4fdb439
-odm/lib64/libdeccfg_v3_6.so|25a64da2aa3bf9cb2b6fd644547ba1e94cdb47f4
-odm/lib64/libdlbdsservice_v3_6.so|08ae454ff029791ba436f750ca6c717cb6d7bf36
-odm/lib64/libqtigef.so|09fb25411b4767ab2f7eebdccd7cc7fd9a85feee
-odm/lib64/vendor.dolby_v3_6.hardware.dms360@2.0-impl.so|5b5f4b383c03a6aaa759b1cc7f6f0aea7d1f6ba0
-odm/lib64/vendor.dolby_v3_6.hardware.dms360@2.0.so|e62f04117fead61eea7f2593e7ccbb565436a0ee
-
 # Dolby (DMS Service) - lemonadep
 odm/etc/dolby/dax-default.xml|c2bd935ad8f2602c1449f268f3acab9c29f3374f
+odm/etc/media_codecs_dolby_audio.xml:vendor/etc/media_codecs_dolby_audio.xml|a794eb15fc198d0285510260025cd99b53fa174f
 system/lib64/vendor.dolby.hardware.dms@2.0.so|0a1cb972160890b07baf3a3e624e9ec1273befed
 vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service|9266e7673b4acea663636ea34e5871b88cbb4b77
 vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc|29296ebfe89b2697fec573be73cc3757fd97bed6
