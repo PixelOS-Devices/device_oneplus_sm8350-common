@@ -271,40 +271,6 @@ vendor/lib64/vendor.display.color@1.4.so|6e4cffe7b1a287dee9c4fb9b8e08ddac50b916b
 vendor/lib64/vendor.display.color@1.5.so|0474d3d9123fd38538a3cd1e3c267608d71b7126
 vendor/lib64/vendor.display.postproc@1.0.so|f82e704e275c25ef27ff37cdbbfb2360e53c2611
 
-# Dolby-DaxUI - from Custom Modified
-system_ext/etc/permissions/privapp-com.dolby.daxappui.xml|b783016728b17eadfcdad662ccaf546afbeab856
-system_ext/etc/permissions/privapp-com.dolby.daxservice.xml|e61ed4d4cbdf54dee613080d26e3dda75c3ac2f8
-system_ext/etc/sysconfig/config-com.dolby.daxappui.xml|43c610f41061f49959ce07b26c60427b8767e535
-system_ext/etc/sysconfig/config-com.dolby.daxservice.xml|7690774632fe32269657fc1a2a0c941c7cd83f3d
-system_ext/etc/sysconfig/hiddenapi-com.dolby.daxservice.xml|f647356bd3a4bb4174e873e4544c2921d51fd4d2
-system_ext/priv-app/DaxUI/DaxUI.apk;OVERRIDES=AudioFX,MusicFX,SoundAmplifierPrebuilt|7c47632162e3a05423f9c728db9a1b1b3407cc>
-
-# Dolby - from OnePlus 9 Pro LE2121 11.2.10.10
-system/lib64/vendor.dolby.hardware.dms@2.0.so|0a1cb972160890b07baf3a3e624e9ec1273befed
-system_ext/priv-app/daxService/daxService.apk|ed1de719afc7181a7e896e0eeaf14edc00761c21
-vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service|9266e7673b4acea663636ea34e5871b88cbb4b77
-vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc|29296ebfe89b2697fec573be73cc3757fd97bed6
-vendor/lib/soundfx/libeffectproxy.so|444dd24c7dff6029997275d84aea9082a79a554d
-vendor/lib/soundfx/libhwdap.so|6871c1e26df02b479907e9c5fd94aaed24525de0
-vendor/lib/soundfx/libswdap.so|f476a901463183905e4056588b225b2e8f6a9997
-vendor/lib/soundfx/libswgamedap.so|0f9ebf216554fd19cbad0a992802c3f96472c3c4
-vendor/lib/libdapparamstorage.so|21a73b73e8f7a1bb42dce91438b3a65635a5e0ab
-vendor/lib/libdeccfg.so|de5d8fd8ae5e9a0a92bffdfac6d2761a16c1c6c6
-vendor/lib/libstagefright_soft_ddpdec.so|28de9538ab47e26d155df9f6122fc70329843b37
-vendor/lib/libstagefrightdolby.so|e377dcc5833b59cf18670c1826a297eb3cf9f04d
-vendor/lib/vendor.dolby.hardware.dms@2.0.so|3f418d5b68b713b6d8fa53540856d82bc1e97bad
-vendor/lib64/soundfx/libeffectproxy.so|3f00d091befe0a4e576ba348974061769894a3bf
-vendor/lib64/soundfx/libhwdap.so|1eb09fa89b0c9d40ddadcc6cd1874531bcf668be
-vendor/lib64/soundfx/libswdap.so|d28980440b35c26580ecda4d3b66684263b5216c
-vendor/lib64/soundfx/libswgamedap.so|9eb9cbf22333eefe1182a32ae22cf0a5c89a9305
-vendor/lib64/libdapparamstorage.so|34bc00a5fc29789a5ac140e5a6702e2167ca95c1
-vendor/lib64/libdeccfg.so|78100e2d82c5260bef6bd5330d763fc2fb6ecd1a
-vendor/lib64/libdlbdsservice.so|4e8a2d53a3c04e84d1fe580cf299ae4601d4a991
-vendor/lib64/libstagefright_soft_ddpdec.so|154fec6036c9f259ae7b958ec92a9b4510429afe
-vendor/lib64/libstagefrightdolby.so|44e35ce9c60af49d516329afc908c1c7d9cfc6e3
-vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so|33312b9c0f15eddb62a6d17659b0d9ddbfd61737
-vendor/lib64/vendor.dolby.hardware.dms@2.0.so|331410ba2862ce7918d42a23118c5558a51aac18
-
 # DPM
 system_ext/bin/dpmd
 system_ext/bin/tcmd
@@ -601,12 +567,14 @@ vendor/etc/media_yupik_v1/video_system_specs.json
 vendor/etc/seccomp_policy/codec2.vendor.base-arm.policy
 vendor/etc/seccomp_policy/codec2.vendor.ext-arm.policy
 vendor/etc/vintf/manifest/c2_manifest_vendor.xml
+vendor/etc/media_codecs.xml
 vendor/etc/media_codecs_lahaina.xml
 vendor/etc/media_codecs_lahaina_vendor.xml
 vendor/etc/media_codecs_performance.xml
 vendor/etc/media_codecs_performance_lahaina.xml
 vendor/etc/media_codecs_performance_lahaina_vendor.xml
 vendor/etc/media_codecs_performance_yupik_v1.xml
+vendor/etc/media_codecs_vendor_audio.xml
 vendor/etc/media_codecs_yupik_v1.xml
 vendor/etc/media_profiles.xml
 vendor/etc/media_profiles_V1_0.xml

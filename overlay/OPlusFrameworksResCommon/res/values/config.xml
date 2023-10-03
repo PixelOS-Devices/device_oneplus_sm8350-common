@@ -71,8 +71,6 @@
         <item>"/apex/com.android.art/javalib/core-oj.jar"</item>
         <item>"/apex/com.android.art/javalib/core-libart.jar"</item>
         <item>"/system_ext/priv-app/SystemUIGoogle/SystemUIGoogle.apk"</item>
-        <item>"/system_ext/priv-app/DaxUI/DaxUI.apk"</item>
-        <item>"/system_ext/priv-app/daxService/daxService.apk"</item>
         <item>"/system/bin/surfaceflinger"</item>
         <item>"/vendor/lib64/libcamxexternalformatutils.so"</item>
         <item>"/vendor/lib64/libipebpsstriping.so"</item>
