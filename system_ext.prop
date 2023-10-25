@@ -11,6 +11,10 @@ persist.vendor.cne.feature=1
 # DPM
 persist.vendor.dpm.feature=11
 
+# EGL - Blobcache configuration
+ro.egl.blobcache.multifile=true
+ro.egl.blobcache.multifile_limit=33554432
+
 # GPS
 persist.backup.ntpServer=0.pool.ntp.org
 
