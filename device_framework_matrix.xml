@@ -31,6 +31,13 @@
             <instance>default</instance>
         </interface>
     </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.oplus.hardware.sendextcamcmd</name>
+        <interface>
+            <name>ISendExtCamCmdService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
     <hal format="hidl" optional="true">
         <name>vendor.oplus.hardware.cwb</name>
         <version>1.0</version>

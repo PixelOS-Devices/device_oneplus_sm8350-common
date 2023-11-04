@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise, are
-## from OnePlus 9 Pro (LE2125_13.1.0.591(EX01)).
+## from OnePlus 9RT (MT2111_14.0.0.54(EX01)).
 
 # ACDBs
 vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.00.pmd
@@ -30,7 +30,6 @@ vendor/lib/rfsa/adsp/bm2n15.bin
 vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDADV_Encoder.so
 vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDAD_Speech_Decoder.so
 vendor/lib/rfsa/adsp/libQ6MSFR_manager_skel.so
-vendor/lib/rfsa/adsp/libQnnHtpAltPrepSkel.so
 vendor/lib/rfsa/adsp/libVppAisQnnHtp.so
 vendor/lib/rfsa/adsp/libVppFrcQnnHtp.so
 vendor/lib/rfsa/adsp/libVppQnnHtp.so
@@ -417,6 +416,7 @@ vendor/lib64/libizat_core.so
 vendor/lib64/libjnihelper.so
 vendor/lib64/liblbs_core.so
 vendor/lib64/libloc_api_v02.so
+vendor/lib64/libloc_api_wds.so
 vendor/lib64/libloc_core.so
 vendor/lib64/libloc_socket.so
 vendor/lib64/liblocation_api.so
@@ -479,7 +479,6 @@ vendor/lib64/com.qualcomm.qti.uceservice@2.0.so
 vendor/lib64/com.qualcomm.qti.uceservice@2.1.so
 vendor/lib64/com.qualcomm.qti.uceservice@2.2.so
 vendor/lib64/com.qualcomm.qti.uceservice@2.3.so
-vendor/lib64/lib-imsSDP.so
 vendor/lib64/lib-imscommon.so
 vendor/lib64/lib-imsdpl.so
 vendor/lib64/lib-imsqimf.so
@@ -503,12 +502,24 @@ vendor/lib64/vendor.qti.hardware.radio.ims@1.6.so
 vendor/lib64/vendor.qti.hardware.radio.ims@1.7.so
 vendor/lib64/vendor.qti.ims.callcapability@1.0.so
 vendor/lib64/vendor.qti.ims.callinfo@1.0.so
+vendor/lib64/vendor.qti.ims.configservice@1.0.so
+vendor/lib64/vendor.qti.ims.configservice@1.1.so
+vendor/lib64/vendor.qti.ims.connection@1.0.so
 vendor/lib64/vendor.qti.ims.factory@1.0.so
 vendor/lib64/vendor.qti.ims.factory@1.1.so
+vendor/lib64/vendor.qti.ims.factory@2.0.so
+vendor/lib64/vendor.qti.ims.factory@2.1.so
+vendor/lib64/vendor.qti.ims.factory@2.2.so
 vendor/lib64/vendor.qti.ims.rcsconfig@1.0.so
 vendor/lib64/vendor.qti.ims.rcsconfig@1.1.so
 vendor/lib64/vendor.qti.ims.rcsconfig@2.0.so
 vendor/lib64/vendor.qti.ims.rcsconfig@2.1.so
+vendor/lib64/vendor.qti.ims.rcssip@1.0.so
+vendor/lib64/vendor.qti.ims.rcssip@1.1.so
+vendor/lib64/vendor.qti.ims.rcssip@1.2.so
+vendor/lib64/vendor.qti.ims.rcsuce@1.0.so
+vendor/lib64/vendor.qti.ims.rcsuce@1.1.so
+vendor/lib64/vendor.qti.ims.rcsuce@1.2.so
 vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so
 vendor/lib64/vendor.qti.imsrtpservice@3.0.so
 
@@ -592,15 +603,7 @@ vendor/lib64/libmmosal.so
 vendor/etc/public.libraries.txt
 
 # Neural networks
-odm/lib64/libQnnHtpAltPrepStub.so
 odm/lib64/libQnnHtpStub.so
-vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-qti
-vendor/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc
-vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti.xml
-vendor/lib64/libQnnHtpAltPrepStub.so
-vendor/lib64/unnhal-acc-common.so
-vendor/lib64/unnhal-acc-gpu.so
-vendor/lib64/unnhal-acc-htp.so
 
 # OMX
 vendor/lib/libAlacSwDec.so
@@ -652,7 +655,6 @@ odm/lib64/vendor.oplus.hardware.performance-V1-ndk_platform.so
 
 # Power-off alarm
 product/app/PowerOffAlarm/PowerOffAlarm.apk|82cd103a4c80fc39d8ffebf0eba90c7c7b387e71
-system_ext/framework/vendor.qti.hardware.alarm-V1.0-java.jar
 vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service
 vendor/bin/power_off_alarm
 vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc
@@ -750,12 +752,16 @@ vendor/etc/init/ssgtzd.rc
 vendor/etc/init/vendor.qti.rmt_storage.rc
 vendor/etc/init/vendor.qti.tftp.rc
 vendor/etc/qcril_database/upgrade/config/10.0_config.sql
+vendor/etc/qcril_database/upgrade/config/11.0_config.sql
+vendor/etc/qcril_database/upgrade/config/12.0_config.sql
 vendor/etc/qcril_database/upgrade/config/6.0_config.sql
 vendor/etc/qcril_database/upgrade/config/7.0_config.sql
 vendor/etc/qcril_database/upgrade/config/8.0_config.sql
 vendor/etc/qcril_database/upgrade/config/9.0_config.sql
 vendor/etc/qcril_database/upgrade/other/0_initial_qcrilnr.sql
 vendor/etc/qcril_database/upgrade/other/10_version_update_ecc_table.sql
+vendor/etc/qcril_database/upgrade/other/11_version_update_ecc_table.sql
+vendor/etc/qcril_database/upgrade/other/12_version_update_ecc_table.sql
 vendor/etc/qcril_database/upgrade/other/1_version_intro_qcrilnr.sql
 vendor/etc/qcril_database/upgrade/other/2_version_add_wps_config_qcrilnr.sql
 vendor/etc/qcril_database/upgrade/other/3_version_update_wps_config_qcrilnr.sql
@@ -795,7 +801,6 @@ vendor/lib64/libqsocket.so
 vendor/lib64/libril-db.so
 vendor/lib64/libril-qc-ltedirectdisc.so
 vendor/lib64/libril-qc-radioconfig.so
-vendor/lib64/libril-qcril-hook-oem.so
 vendor/lib64/librilqmimiscservices.so
 vendor/lib64/librilqmiservices.so
 vendor/lib64/libsystem_health_mon.so
@@ -803,11 +808,13 @@ vendor/lib64/qcrilMarshal.so
 vendor/lib64/qcrild_libqcrilnrutils.so
 vendor/lib64/qtiril-utils.so
 vendor/lib64/qtiwakelock.so
+vendor/lib64/vendor.oplus.hardware.radio-V1-ndk_platform.so
 vendor/lib64/vendor.qti.hardware.radio.am@1.0.so
 vendor/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0.so
 vendor/lib64/vendor.qti.hardware.radio.internal.deviceinfo@1.0.so
 vendor/lib64/vendor.qti.hardware.radio.lpa@1.0.so
 vendor/lib64/vendor.qti.hardware.radio.lpa@1.1.so
+vendor/lib64/vendor.qti.hardware.radio.lpa@1.2.so
 vendor/lib64/vendor.qti.hardware.radio.qcrilhook@1.0.so
 vendor/lib64/vendor.qti.hardware.radio.qtiradio@1.0.so
 vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.0.so
@@ -817,6 +824,7 @@ vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.3.so
 vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.4.so
 vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.5.so
 vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.6.so
+vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.7.so
 vendor/lib64/vendor.qti.hardware.radio.uim@1.0.so
 vendor/lib64/vendor.qti.hardware.radio.uim@1.1.so
 vendor/lib64/vendor.qti.hardware.radio.uim@1.2.so
@@ -1027,128 +1035,6 @@ vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti
 vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
 
-# Vibrator firmware
-odm/firmware/100ms_RTP.bin
-odm/firmware/120ms_RTP.bin
-odm/firmware/140ms_RTP.bin
-odm/firmware/160ms_RTP.bin
-odm/firmware/180ms_RTP.bin
-odm/firmware/200ms_RTP.bin
-odm/firmware/20ms_RTP.bin
-odm/firmware/220ms_RTP.bin
-odm/firmware/240ms_RTP.bin
-odm/firmware/260ms_RTP.bin
-odm/firmware/280ms_RTP.bin
-odm/firmware/300ms_RTP.bin
-odm/firmware/320ms_RTP.bin
-odm/firmware/340ms_RTP.bin
-odm/firmware/360ms_RTP.bin
-odm/firmware/380ms_RTP.bin
-odm/firmware/400ms_RTP.bin
-odm/firmware/40ms_RTP.bin
-odm/firmware/420ms_RTP.bin
-odm/firmware/440ms_RTP.bin
-odm/firmware/460ms_RTP.bin
-odm/firmware/480ms_RTP.bin
-odm/firmware/500ms_RTP.bin
-odm/firmware/60ms_RTP.bin
-odm/firmware/80ms_RTP.bin
-odm/firmware/AT500ms_RTP.bin
-odm/firmware/VZW_Alrwave_RTP.bin
-odm/firmware/Version_Alert_RTP.bin
-odm/firmware/alarm_Alarm_clock_RTP.bin
-odm/firmware/alarm_Beep_RTP.bin
-odm/firmware/alarm_Breeze_RTP.bin
-odm/firmware/alarm_Dawn_RTP.bin
-odm/firmware/alarm_Dream_RTP.bin
-odm/firmware/alarm_Fluttering_RTP.bin
-odm/firmware/alarm_Flyer_RTP.bin
-odm/firmware/alarm_Interesting_RTP.bin
-odm/firmware/alarm_Leisurely_RTP.bin
-odm/firmware/alarm_Memory_RTP.bin
-odm/firmware/alarm_Relieved_RTP.bin
-odm/firmware/alarm_Ripple_RTP.bin
-odm/firmware/alarm_Slowly_RTP.bin
-odm/firmware/alarm_Stars_RTP.bin
-odm/firmware/alarm_Surging_RTP.bin
-odm/firmware/alarm_The_wind_RTP.bin
-odm/firmware/alarm_Walking_in_the_rain_RTP.bin
-odm/firmware/alarm_spring_RTP.bin
-odm/firmware/alarm_tactfully_RTP.bin
-odm/firmware/aw8697_haptic.bin
-odm/firmware/aw8697_haptic_166.bin
-odm/firmware/aw8697_haptic_168.bin
-odm/firmware/aw8697_haptic_170.bin
-odm/firmware/aw8697_haptic_172.bin
-odm/firmware/aw8697_haptic_174.bin
-odm/firmware/aw8697_rtp.bin
-odm/firmware/aw8697_rtp_lighthouse.bin
-odm/firmware/aw8697_rtp_silk.bin
-odm/firmware/awinic_haptic_gun_params.bin
-odm/firmware/awinic_haptic_params.bin
-odm/firmware/notif_Allay_RTP.bin
-odm/firmware/notif_Allusion_RTP.bin
-odm/firmware/notif_Amiable_RTP.bin
-odm/firmware/notif_Blare_RTP.bin
-odm/firmware/notif_Blissful_RTP.bin
-odm/firmware/notif_Brisk_RTP.bin
-odm/firmware/notif_Bubble_RTP.bin
-odm/firmware/notif_Cheerful_RTP.bin
-odm/firmware/notif_Clear_RTP.bin
-odm/firmware/notif_Comely_RTP.bin
-odm/firmware/notif_Cozy_RTP.bin
-odm/firmware/notif_Ding_RTP.bin
-odm/firmware/notif_Effervesce_RTP.bin
-odm/firmware/notif_Elegant_RTP.bin
-odm/firmware/notif_Free_RTP.bin
-odm/firmware/notif_Hallucination_RTP.bin
-odm/firmware/notif_Inbound_RTP.bin
-odm/firmware/notif_Light_RTP.bin
-odm/firmware/notif_Meet_RTP.bin
-odm/firmware/notif_Naivety_RTP.bin
-odm/firmware/notif_Quickly_RTP.bin
-odm/firmware/notif_Rhythm_RTP.bin
-odm/firmware/notif_Surprise_RTP.bin
-odm/firmware/notif_Twinkle_RTP.bin
-odm/firmware/ring_Amenity_RTP.bin
-odm/firmware/ring_Bounce_RTP.bin
-odm/firmware/ring_Calm_RTP.bin
-odm/firmware/ring_Lazy_RTP.bin
-odm/firmware/ring_Mystical_RTP.bin
-odm/firmware/ring_Whirl_RTP.bin
-odm/firmware/ringtone_Alacrity_RTP.bin
-odm/firmware/ringtone_Blues_RTP.bin
-odm/firmware/ringtone_Cloud_RTP.bin
-odm/firmware/ringtone_Cyclotron_RTP.bin
-odm/firmware/ringtone_Distinct_RTP.bin
-odm/firmware/ringtone_Dynamic_RTP.bin
-odm/firmware/ringtone_Eager.bin
-odm/firmware/ringtone_Ebullition.bin
-odm/firmware/ringtone_Echo_RTP.bin
-odm/firmware/ringtone_Expect_RTP.bin
-odm/firmware/ringtone_Fanatical_RTP.bin
-odm/firmware/ringtone_Friendship.bin
-odm/firmware/ringtone_Funky_RTP.bin
-odm/firmware/ringtone_Guitar_RTP.bin
-odm/firmware/ringtone_Harping_RTP.bin
-odm/firmware/ringtone_Highlight_RTP.bin
-odm/firmware/ringtone_Idyl_RTP.bin
-odm/firmware/ringtone_Innocence_RTP.bin
-odm/firmware/ringtone_Jazz_life_RTP.bin
-odm/firmware/ringtone_Journey_RTP.bin
-odm/firmware/ringtone_Joyous_RTP.bin
-odm/firmware/ringtone_Marimba_RTP.bin
-odm/firmware/ringtone_Old_telephone_RTP.bin
-odm/firmware/ringtone_OnePlus_tune_rhythm_RTP.bin
-odm/firmware/ringtone_Oneplus_tune_RTP.bin
-odm/firmware/ringtone_Optimistic_RTP.bin
-odm/firmware/ringtone_Piano_RTP.bin
-odm/firmware/ringtone_Rhythm_RTP.bin
-odm/firmware/ringtone_Sun_glittering_RTP.bin
-odm/firmware/shuntai24k_rtp.bin
-odm/firmware/t-jingle_RTP.bin
-odm/firmware/wentai24k_rtp.bin
-
 # VPP
 vendor/bin/hw/qconfigservice
 vendor/bin/vppservice
@@ -1189,6 +1075,7 @@ vendor/etc/wifi/wpa_supplicant_overlay.conf
 system/framework/WfdCommon.jar
 system_ext/bin/wfdservice
 system_ext/etc/init/wfdservice.rc
+system_ext/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml
 system_ext/etc/seccomp_policy/wfdservice.policy
 system_ext/etc/wfdconfigsink.xml
 system_ext/lib/com.qualcomm.qti.wifidisplayhal@1.0.so
