@@ -87,6 +87,9 @@ function blob_fixup() {
         odm/lib/liblvimfs_wrapper.so|odm/lib64/libCOppLceTonemapAPI.so|odm/lib64/libaps_frame_registration.so|odm/lib64/libSuperRaw.so|vendor/lib64/libalsc.so)
             "${PATCHELF}" --replace-needed "libstdc++.so" "libstdc++_vendor.so" "${2}"
             ;;
+        vendor/bin/init.kernel.post_boot-lahaina.sh)
+            sed -i "s/uag/schedutil/" "${2}"
+            ;;
     esac
 }
 
