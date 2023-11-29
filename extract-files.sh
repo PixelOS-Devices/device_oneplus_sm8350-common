@@ -90,6 +90,9 @@ function blob_fixup() {
         vendor/bin/init.kernel.post_boot-lahaina.sh)
             sed -i "s/uag/schedutil/" "${2}"
             ;;
+        odm/lib/libdlbdsservice_v3_6.so | odm/lib/libstagefright_soft_ddpdec.so | odm/lib/libstagefrightdolby.so | odm/lib64/libdlbdsservice_v3_6.so)
+            "${PATCHELF}" --replace-needed "libstagefright_foundation.so" "libstagefright_foundation-v33.so" "${2}"
+            ;;
     esac
 }
 
