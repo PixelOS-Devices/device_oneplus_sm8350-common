@@ -27,7 +27,7 @@ persist.dbg.wfc_avail_ovr=1
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 media.stagefright.thumbnail.prefer_hw_codecs=true
 ro.media.recorder-max-base-layer-fps=60
-vendor.mm.enable.qcom_parser=4044018
+vendor.mm.enable.qcom_parser=3974386
 
 # Netmgr
 persist.data.df.agg.dl_pkt=10
