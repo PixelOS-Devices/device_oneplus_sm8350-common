@@ -761,7 +761,6 @@ vendor/bin/hw/qcrilNrd
 vendor/bin/ATFWD-daemon
 vendor/bin/adpl
 vendor/bin/ks
-vendor/bin/netmgrd
 vendor/bin/pd-mapper
 vendor/bin/port-bridge
 vendor/bin/qrtr-ns
@@ -864,6 +863,9 @@ vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.0.so
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.1.so
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.2.so
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so
+
+# RIL (Netmgrd) - from MT2111_13.1.0.595(EX01)
+vendor/bin/netmgrd|c224d6e2159b26e029660c7f5a8f1d0c72dd4dfb
 
 # Sensors
 odm/bin/oplus_sensor_fb
