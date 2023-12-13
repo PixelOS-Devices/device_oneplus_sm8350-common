@@ -751,7 +751,7 @@ vendor/bin/hw/qcrilNrd
 vendor/bin/ATFWD-daemon
 vendor/bin/adpl
 vendor/bin/ks
-vendor/bin/netmgrd
+vendor/bin/netmgrd|bd7eb2864e49d7aa0b8fbd7e0839707e3f2ddf60
 vendor/bin/pd-mapper
 vendor/bin/port-bridge
 vendor/bin/qrtr-ns
