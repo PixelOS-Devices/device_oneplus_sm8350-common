@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise, are
-## from OnePlus 9RT (MT2111_14.0.0.210(EX01)).
+## from OnePlus 9RT (MT2111_14.0.0.211(EX01)).
 
 # ACDBs
 vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.00.pmd
