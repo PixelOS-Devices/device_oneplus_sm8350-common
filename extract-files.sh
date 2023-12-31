@@ -64,6 +64,9 @@ fi
 
 function blob_fixup() {
     case "${1}" in
+        odm/bin/hw/android.hardware.ir-service.oplus)
+            "${PATCHELF}" --replace-needed "android.hardware.ir-V1-ndk_platform.so" "android.hardware.ir-V1-ndk.so" "${2}"
+            ;;
         odm/etc/camera/CameraHWConfiguration.config)
             sed -i "/SystemCamera = / s/1;/0;/g" "${2}"
             sed -i "/SystemCamera = / s/0;$/1;/" "${2}"
@@ -76,6 +79,9 @@ function blob_fixup() {
             ;;
         system_ext/lib64/libwfdnative.so)
             sed -i "s/android.hidl.base@1.0.so/libhidlbase.so\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00/" "${2}"
+            ;;
+        vendor/bin/init.kernel.post_boot-lahaina.sh)
+            sed -i "s/uag/schedutil/" "${2}"
             ;;
         vendor/etc/media_*/video_system_specs.json)
             sed -i "/max_retry_alloc_output_timeout/ s/1000/0/" "${2}"
