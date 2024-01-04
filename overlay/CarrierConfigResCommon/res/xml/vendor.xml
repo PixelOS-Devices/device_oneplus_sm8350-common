@@ -43,6 +43,8 @@
         <string name="gps.nfw_proxy_apps">com.example.android.locationattribution</string>
         <boolean name="dtmf_type_enabled_bool" value="true" />
         <boolean name="csp_enabled_bool" value="true" />
+        <!-- PA: Enable LTE+ icon by default -->
+        <boolean name="hide_lte_plus_data_icon_bool" value="false"/>
     </carrier_config>
     <carrier_config mcc="001" mnc="01">
         <boolean name="carrier_volte_available_bool" value="true" />
