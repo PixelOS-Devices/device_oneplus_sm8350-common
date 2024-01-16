@@ -41,12 +41,17 @@
             android:entryValues="@array/dolby_preset_values"
             android:title="@string/dolby_preset" />
 
-        <ListPreference
+        <SwitchPreference
             android:key="dolby_virtualizer"
-            android:entries="@array/dolby_virtualizer_entries"
-            android:entryValues="@array/dolby_virtualizer_values"
-            android:defaultValue="4"
             android:title="@string/dolby_virtualizer" />
+
+        <ListPreference
+            android:key="dolby_stereo"
+            android:entries="@array/dolby_stereo_entries"
+            android:entryValues="@array/dolby_stereo_values"
+            android:defaultValue="4"
+            android:title="@string/dolby_stereo_widening"
+            android:dependency="dolby_virtualizer" />
 
         <ListPreference
             android:key="dolby_dialogue"

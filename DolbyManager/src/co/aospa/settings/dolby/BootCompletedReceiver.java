@@ -11,6 +11,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
 
+import co.aospa.settings.dolby.DolbyUtils;
+
 public class BootCompletedReceiver extends BroadcastReceiver {
 
     private static final String TAG = "DolbyManager";
@@ -22,6 +24,6 @@ public class BootCompletedReceiver extends BroadcastReceiver {
             return;
         }
         if (DEBUG) Log.d(TAG, "Received boot completed intent");
-        DolbyUtils.getInstance(context);
+        DolbyUtils.getInstance(context).onBootCompleted();
     }
 }
