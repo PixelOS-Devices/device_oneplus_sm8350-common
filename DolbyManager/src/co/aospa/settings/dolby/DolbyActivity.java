@@ -19,7 +19,7 @@ package co.aospa.settings.dolby;
 import android.os.Bundle;
 
 import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
-import co.aospa.settings.dolby.R;
+import com.android.settingslib.widget.R;
 
 public class DolbyActivity extends CollapsingToolbarBaseActivity {
 

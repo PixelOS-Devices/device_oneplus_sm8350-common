@@ -37,24 +37,21 @@ class DolbyAtmos extends AudioEffect {
 
     enum DsParam {
         HEADPHONE_VIRTUALIZER(101),
-        SPEAKER_VIRTUALIZER(102),
-        VOLUME_LEVELER_ENABLE(103),
+        VOLUME_LEVELER(103),
         DIALOGUE_ENHANCER_ENABLE(105),
         DIALOGUE_ENHANCER_AMOUNT(108),
-        GEQ_BAND_GAINS(110, 20),
-        BASS_ENHANCER_ENABLE(111),
-        STEREO_WIDENING_AMOUNT(113),
-        VOLUME_LEVELER_AMOUNT(116);
+        GEQ(110),
+        BASS_ENHANCER(111),
+        STEREO_WIDENING(113);
 
         public int id, length;
 
-        DsParam(int id, int length) {
+        DsParam(int id) {
             this.id = id;
-            this.length = length;
         }
 
-        DsParam(int id) {
-            this(id, 1);
+        public int getLength() {
+            return (id == GEQ.id) ? 20 : 1;
         }
 
         public String toString() {
@@ -136,11 +133,11 @@ class DolbyAtmos extends AudioEffect {
     void resetProfileSpecificSettings() {
         int profile = getProfile();
         Log.d(TAG, "resetProfileSpecificSettings: profile=" + profile);
-        setIntParam(EFFECT_PARAM_RESET_PROFILE_SETTINGS, profile);
+        setIntParam(EFFECT_PARAM_RESET_PROFILE_SETTINGS, getProfile());
     }
 
     void setDapParameter(int profile, DsParam param, int values[]) {
-        Log.d(TAG, "setDapParameter: profile=" + profile + " param=" + param);
+        Log.d(TAG, "setDapParameter: profile=" + profile + " param=" + param.toString());
         int length = values.length;
         byte[] buf = new byte[(length + 4) * 4];
         int i = int32ToByteArray(EFFECT_PARAM_SET_PROFILE_PARAMETER, buf, 0);
@@ -163,8 +160,8 @@ class DolbyAtmos extends AudioEffect {
     }
 
     int[] getDapParameter(int profile, DsParam param) {
-        Log.d(TAG, "getDapParameter: profile=" + profile + " param=" + param);
-        int length = param.length;
+        Log.d(TAG, "getDapParameter: profile=" + profile + " param=" + param.toString());
+        int length = param.getLength();
         byte[] buf = new byte[(length + 2) * 4];
         int i = (param.id << 16) + EFFECT_PARAM_GET_PROFILE_PARAMETER;
         checkStatus(getParameter(i + (profile << 8), buf));

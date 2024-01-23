@@ -12,7 +12,6 @@
      limitations under the License.
 -->
 <resources>
-
     <!-- Dolby Atmos -->
     <string-array name="dolby_profile_entries">
         <item>@string/dolby_profile_dynamic</item>
@@ -45,17 +44,6 @@
     </string-array>
 
      <string-array name="dolby_preset_values">
-        <!--
-        <item>0,0,0,0,0,0,0,0,0,0</item>
-        <item>4,1,-2,-0.25,0,-2,0,-2,0.5,4</item>
-        <item>0,0,0,-1,-1,-3,-0.5,0,0,0</item>
-        <item>-2,-0.5,-5,-1,0,0,-0.5,-3,-0.5,0</item>
-        <item>0,0,0,0,0.5,3,1,6,2,6</item>
-        <item>3,0,-3,-0.5,-0.5,-3,-0.5,0,0,2</item>
-        <item>2,2,-6,-2,3,1,0,1,0,2</item>
-        <item>3,1,-1,0,-0.5,-3,-0.5,0,0,0</item>
-        <item>2,0,0,-1.25,-1,-4,0,0,0,0</item>
-        -->
         <item>0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</item>
         <item>60,36,12,-12,-36,-24,-12,-8,-4,-20,-36,-20,-4,-20,-36,-16,4,32,60,60</item>
         <item>8,8,8,8,8,0,-8,-8,-8,-24,-40,-20,0,4,8,8,8,8,8,8</item>
@@ -83,18 +71,19 @@
         <item>12</item>
     </string-array>
 
-    <string-array name="dolby_stereo_entries">
+    <string-array name="dolby_virtualizer_entries">
+        <item>@string/dolby_off</item>
         <item>@string/dolby_low</item>
         <item>@string/dolby_medium</item>
         <item>@string/dolby_high</item>
         <item>@string/dolby_max</item>
     </string-array>
 
-    <string-array name="dolby_stereo_values">
+    <string-array name="dolby_virtualizer_values">
+        <item>0</item>
         <item>4</item>
         <item>24</item>
         <item>44</item>
         <item>64</item>
     </string-array>
-
 </resources>
