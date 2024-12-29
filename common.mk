@@ -93,6 +93,8 @@ PRODUCT_PACKAGES += \
     android.hardware.boot-service.qti.recovery
 
 # Camera
+$(call inherit-product-if-exists, vendor/oplus/camera/opluscamera.mk)
+
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service_64
