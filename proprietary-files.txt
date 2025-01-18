@@ -1515,7 +1515,7 @@ vendor/etc/wifi/p2p_supplicant_overlay.conf
 vendor/etc/wifi/wpa_supplicant_overlay.conf
 
 # WiFi Display (system)
-system/framework/WfdCommon.jar
+system/framework/WfdCommon.jar;BOOT_JAR
 system_ext/bin/wfdservice
 system_ext/etc/init/wfdservice.rc
 system_ext/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml
