@@ -327,6 +327,26 @@ odm/lib64/libdlbdsservice_v3_6.so|08ae454ff029791ba436f750ca6c717cb6d7bf36
 odm/lib64/vendor.dolby_v3_6.hardware.dms360@2.0-impl.so|5b5f4b383c03a6aaa759b1cc7f6f0aea7d1f6ba0
 odm/lib64/vendor.dolby_v3_6.hardware.dms360@2.0.so|e62f04117fead61eea7f2593e7ccbb565436a0ee
 
+# Dolby Media - from OnePlus 11 CPH2447_15.0.0.401(EX01)
+odm/bin/hw/vendor.dolby_sp.hardware.dmssp@2.0-service|1240cecce2ad8943c2aa5b96381ebeb5e1bac43d
+odm/bin/hw/vendor.dolby_sp.media.c2@1.0-service|cafd800a4e83afa206347886cfed48cdb50cb80c|474935cbe8584567aa932f4284409e81e60eaae2
+odm/etc/init/vendor.dolby.media.c2@1.0-service.rc|6af989419070ea6b4646f47ab78849d7549abda3
+odm/etc/init/vendor.dolby_sp.hardware.dmssp@2.0-service.rc|94c85fbfc93527395fcc1bb7bfb58734f245d4f3
+odm/etc/vintf/manifest/vendor.dolby.hardware.dms.xml|dc9ebef89624d524fe76724e9a220b5d2affe62b
+odm/lib64/libcodec2_hidl@1.0.so:odm/lib64/libcodec2_hidl@1.0_sp.so;FIX_SONAME|4b662f2ecc5c66874f93407c48f492b2d09ce47c|8d18abc58bc31d65c74ba217f6b6370cee733e1c
+odm/lib64/libcodec2_hidl_plugin.so:odm/lib64/libcodec2_hidl_plugin_sp.so;FIX_SONAME|2dbcfda2c7d867edf106fc72d02b11c719f676fb|88ddcf31158212952a3ea85e7ab420333dd3d1d2
+odm/lib64/libcodec2_soft_ac4dec_sp.so|b22d228a84b1698bca8c95aaf67324f47a8262bb|227d93c125b98b124f8f6e6e15e17d7f43ccf0ec
+odm/lib64/libcodec2_soft_common.so:odm/lib64/libcodec2_soft_common_sp.so;FIX_SONAME|5cce54ffe4e82ca9d6ca6606ac66b599ac28ea71|43f98e465c481a6db1caba18da22782ba634ebdb
+odm/lib64/libcodec2_soft_ddpdec_sp.so|c2034f16911dd7ae4c58c4e05c4f54b4293faef3|f57ff5dea714d5a79b64d014b00752daa0fd6000
+odm/lib64/libcodec2_store_dolby_sp.so|4b9e3bd2fd8ffd49d50b81926cb89f7916c7a212|f1a59b096f7be5a2f09d0648742ec77c46dba06d
+odm/lib64/libdapparamstorage_sp.so|f275e0f47c40b72890ee1cde373e60b4b2ffd711
+odm/lib64/libdeccfg_sp.so|e7f27c1009baecf84835deee1a7e296c5dc3f4e6
+odm/lib64/libdlbdsservice_sp.so|7c1847cce3d0c7f4ce5658090d752e493e8570ea
+odm/lib64/libui.so:odm/lib64/libui_sp.so;FIX_SONAME|88b8584db2fa78d0ec06d89f623f8321721051e1|744a404026af1de3f0c5cd56b2d84e9045617815
+odm/lib64/vendor.dolby_sp.hardware.dmssp@2.0-impl.so|b51e6a885a738023ce6ec97b702d6733b70d0a15
+odm/lib64/vendor.dolby_sp.hardware.dmssp@2.0.so|2173d68717cbcdaab98e1cf15a0d410ea00d0271
+vendor/lib64/libcodec2_vndk.so:odm/lib64/libcodec2_vndk_sp.so;FIX_SONAME|d9d17fd476ee2c3593b0f123af957132e34211af|f5f8352533a0d8efc0f1021333cd2c59044b03f9
+
 # DRM
 vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service
 vendor/bin/qseecomd
