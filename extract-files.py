@@ -93,7 +93,7 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libcodec2_hidl_plugin.so', 'libcodec2_hidl_plugin_sp.so')
         .replace_needed('libcodec2_vndk.so', 'libcodec2_vndk_sp.so'),
     'odm/lib64/libui_sp.so': blob_fixup()
-        .replace_needed('android.hardware.graphics.common-V3-ndk.so', 'android.hardware.graphics.common-V5-ndk.so')
+        .replace_needed('android.hardware.graphics.common-V3-ndk.so', 'android.hardware.graphics.common-V6-ndk.so')
         .replace_needed('android.hardware.graphics.allocator-V1-ndk.so', 'android.hardware.graphics.allocator-V2-ndk.so'),
     # Dolby END
 }  # fmt: skip
