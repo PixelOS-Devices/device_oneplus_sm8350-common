@@ -54,7 +54,7 @@ blob_fixups: blob_fixups_user_type = {
     'product/app/PowerOffAlarm/PowerOffAlarm.apk': blob_fixup()
         .apktool_patch('blob-patches/PowerOffAlarm.patch', '-s'),
     'system_ext/bin/wfdservice': blob_fixup()
-        .add_needed('libwfdservice_shim_v1.so'),
+        .add_needed('libwfdservice_shim.so'),
     'product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml': blob_fixup()
         .regex_replace('/my_product', '/product'),
     'system_ext/lib/libwfdmmsrc_system.so': blob_fixup()
