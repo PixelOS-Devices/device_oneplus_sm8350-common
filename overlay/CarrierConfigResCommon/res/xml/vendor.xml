@@ -2170,6 +2170,7 @@
         <boolean name="carrier_allow_turnoff_ims_bool" value="false" />
         <boolean name="use_sms_callback_mode_bool" value="true" />
         <boolean name="editable_enhanced_4g_lte_bool" value="false" />
+        <boolean name="satellite_esos_supported_bool" value="false" />
     </carrier_config>
     <carrier_config device="kona" mcc="311" mnc="480">
         <boolean name="show_rtt_visibility_setting_bool" value="true" />
